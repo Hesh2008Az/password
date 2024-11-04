@@ -1,7 +1,6 @@
 import streamlit as st
 import json
 from random import choice, shuffle, randint
-import pyperclip
 
 class PasswordManager:
 
@@ -21,7 +20,6 @@ class PasswordManager:
         shuffle(password_list)
 
         password = "".join(password_list)
-        pyperclip.copy(password)
         return password
 
     def find_password(self, website):
